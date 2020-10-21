@@ -1,5 +1,5 @@
 {
-  "name": "o1hqi",
+  "name": "react-native-sandbox",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@emotion/core": "10.0.35",
+    "@emotion/native": "10.0.27",
+    "emotion-theming": "10.0.27",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "0.63.3",
@@ -32,5 +35,6 @@
   "jest": {
     "preset": "react-native"
   },
-  "description": null
+  "description": "",
+  "keywords": []
 }
