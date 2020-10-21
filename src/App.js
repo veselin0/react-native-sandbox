@@ -1,18 +1,21 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { SafeAreaView } from "react-native";
+import styled from "@emotion/native";
+
+import ThemeProvider from "./theme/ThemeProvider";
+import InfiniteList from "./components/InfiniteList";
 
 export default function App() {
   return (
-    <View style={styles.screen}>
-      <Text>Gocho</Text>
-    </View>
+    <ThemeProvider>
+      <MainContent>
+        <InfiniteList />
+      </MainContent>
+    </ThemeProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: "#ccc",
-    padding: 50
-  }
-});
+const MainContent = styled(SafeAreaView)`
+  height: 100vh;
+  background-color: goldenrod;
+`;
